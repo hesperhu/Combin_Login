@@ -11,7 +11,8 @@ import SwiftUI
 struct Combin_LoginApp: App {
     var body: some Scene {
         WindowGroup {
-            LoginView()
+//            LoginView()
+            LoginViewCancelable()
         }
     }
 }

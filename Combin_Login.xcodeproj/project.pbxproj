@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		2A35F74429A9F05C005A7EC6 /* media in Resources */ = {isa = PBXBuildFile; fileRef = 2A35F74229A9F05B005A7EC6 /* media */; };
 		2A35F74529A9F05C005A7EC6 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 2A35F74329A9F05B005A7EC6 /* README.md */; };
+		2A35F74729A9F5A2005A7EC6 /* LoginVMCancelable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A35F74629A9F5A2005A7EC6 /* LoginVMCancelable.swift */; };
+		2A35F74929A9F74A005A7EC6 /* LoginViewCancelable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A35F74829A9F749005A7EC6 /* LoginViewCancelable.swift */; };
 		2AEACC3429A9772B004356CE /* Combin_LoginApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AEACC3329A9772B004356CE /* Combin_LoginApp.swift */; };
 		2AEACC3829A9772C004356CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AEACC3729A9772C004356CE /* Assets.xcassets */; };
 		2AEACC3B29A9772C004356CE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AEACC3A29A9772C004356CE /* Preview Assets.xcassets */; };
@@ -19,6 +21,8 @@
 /* Begin PBXFileReference section */
 		2A35F74229A9F05B005A7EC6 /* media */ = {isa = PBXFileReference; lastKnownFileType = folder; path = media; sourceTree = "<group>"; };
 		2A35F74329A9F05B005A7EC6 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		2A35F74629A9F5A2005A7EC6 /* LoginVMCancelable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVMCancelable.swift; sourceTree = "<group>"; };
+		2A35F74829A9F749005A7EC6 /* LoginViewCancelable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewCancelable.swift; sourceTree = "<group>"; };
 		2AEACC3029A9772B004356CE /* Combin_Login.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Combin_Login.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AEACC3329A9772B004356CE /* Combin_LoginApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Combin_LoginApp.swift; sourceTree = "<group>"; };
 		2AEACC3729A9772C004356CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -82,6 +86,8 @@
 			children = (
 				2AEACC4529A97766004356CE /* LoginView.swift */,
 				2AEACC4629A97767004356CE /* LoginViewModel.swift */,
+				2A35F74829A9F749005A7EC6 /* LoginViewCancelable.swift */,
+				2A35F74629A9F5A2005A7EC6 /* LoginVMCancelable.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -158,9 +164,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A35F74729A9F5A2005A7EC6 /* LoginVMCancelable.swift in Sources */,
 				2AEACC4829A97767004356CE /* LoginViewModel.swift in Sources */,
 				2AEACC4729A97767004356CE /* LoginView.swift in Sources */,
 				2AEACC3429A9772B004356CE /* Combin_LoginApp.swift in Sources */,
+				2A35F74929A9F74A005A7EC6 /* LoginViewCancelable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
