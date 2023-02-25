@@ -11,7 +11,6 @@ import SwiftUI
 struct Combin_LoginApp: App {
     var body: some Scene {
         WindowGroup {
-//            DefaultView()
             LoginView()
         }
     }
