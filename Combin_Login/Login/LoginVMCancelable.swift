@@ -38,6 +38,12 @@ class LoginVMCancelable: ObservableObject {
                 print("changed")
             }
             .store(in: &self.cancels)
+        //检验使用publisher来替代传统的addobserver的消息处理机制 2023-02-26(周日) 21:39:08 
+        NotificationCenter.default.publisher(for: .NSCalendarDayChanged)
+            .sink { note in
+                print(note)
+            }
+            .store(in: &self.cancels)
         
     }
     
