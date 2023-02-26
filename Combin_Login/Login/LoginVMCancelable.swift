@@ -14,6 +14,8 @@ class LoginVMCancelable: ObservableObject {
     @Published var userNameValidation: String = ""
     @Published var userPasswd: String = ""
     @Published var userPasswdValidation: String = ""
+    //测试class的对象属性是否可用。2023-02-26(周日) 21:20:28
+    @Published var classProperty = LoginViewModel()
     
     private var cancels : Set<AnyCancellable> = []
     
@@ -30,6 +32,13 @@ class LoginVMCancelable: ObservableObject {
                 self.userPasswdValidation = passwd
             }
             .store(in: &self.cancels)
+        
+        $classProperty
+            .sink { _ in
+                print("changed")
+            }
+            .store(in: &self.cancels)
+        
     }
     
     func cancelAll() {

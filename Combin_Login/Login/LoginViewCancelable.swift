@@ -11,6 +11,9 @@ import SwiftUI
 struct LoginViewCancelable: View {
     @ObservedObject var user = LoginVMCancelable()
     
+//    @StateObject var user = LoginVMCancelable()
+
+    
     var body: some View {
         VStack {
             TextField("name", text: self.$user.userName)
@@ -22,6 +25,12 @@ struct LoginViewCancelable: View {
             Button("Cancel validation") {
                 self.user.cancelAll()
             }
+            
+            Button("chnage") {
+                self.user.classProperty = LoginViewModel()
+            }
+
+            
         }
     }
 }
